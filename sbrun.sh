@@ -1,1 +1,1 @@
-sysbench --test=oltp --oltp-test-mode=complex --num-threads=30 --max-time=30 --max-requests=100000 --db-ps-mode=disable --mysql-db=${MYSQL_DATABASE} --mysql-user=${MYSQL_USER} --mysql-password=${MYSQL_PASSWORD} run
+sysbench --test=oltp --oltp-test-mode=complex --num-threads=30 --max-time=300 --max-requests=100000 --db-ps-mode=disable --mysql-db=${MYSQL_DATABASE} --mysql-user=${MYSQL_USER} --mysql-password=${MYSQL_PASSWORD} run
