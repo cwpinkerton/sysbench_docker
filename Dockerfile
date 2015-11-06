@@ -11,7 +11,11 @@ ENV MYSQL_ROOT_PASSWORD Confio123
 ENV MYSQL_DATABASE sysbench
 ENV MYSQL_USER sysbench
 ENV MYSQL_PASSWORD sysbench
+
 ENV SYSBENCH_TABLE_SIZE 100000
+ENV SYSBENCH_NUM_THREADS 30
+ENV SYSBENCH_MAX_TIME 0
+ENV SYSBENCH_MAX_REQUESTS 1000000
 
 COPY ./sysbench_prepare.sh /docker-entrypoint-initdb.d/sysbench_prepare.sh
 COPY ./sbrun.sh /opt/sbrun.sh
